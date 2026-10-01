@@ -1,0 +1,6 @@
+node_modules/
+.env
+google-token.json
+*.log
+.DS_Store
+public/backup/

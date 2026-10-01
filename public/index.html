@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskPilot AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="hero">
+    <div class="hero-badge">🤖 AI-Powered Autonomous Assistant</div>
+
+    <h1>TaskPilot AI</h1>
+
+    <p>
+        Plan, approve, execute, and verify your everyday tasks with AI.
+    </p>
+</div>
+        <div class="task-input-section">
+
+            
+    <label for="taskInput">
+        📝 What would you like TaskPilot to do?
+    </label>
+
+    <textarea
+        id="taskInput"
+        placeholder="Example: Tomorrow at 6 PM, schedule a DSA study session and remind me."
+    ></textarea>
+
+    <small>
+        TaskPilot will analyze your request, assess risk, ask for approval when required, and execute the action.
+    </small>
+
+</div>
+
+        <button id="planButton" class="primary-btn">
+    🚀 Generate AI Plan
+</button>
+
+        <div id="result"></div>
+
+<div class="intent-section">
+
+    <h2>🧠 AI Intent & Risk Analysis</h2>
+
+    <p>
+        Understand what TaskPilot detected and which actions require your approval.
+    </p>
+
+    <button id="intentButton" class="secondary-btn">
+        🔍 Analyze Intent & Risk
+    </button>
+
+    <div id="intentResult"></div>
+
+</div>
+
+        <div class="history-section">
+
+    <h2>📋 Action History</h2>
+
+    <p>
+        Review previously planned, approved, executed, and verified actions.
+    </p>
+
+    <button id="historyButton" class="secondary-btn">
+        📋 View Action History
+    </button>
+
+    <div id="historyList"></div>
+
+</div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

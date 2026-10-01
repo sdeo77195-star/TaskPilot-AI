@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+}
+
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: 40px auto;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 8px 14px;
+    margin-bottom: 15px;
+    background: #e0e7ff;
+    color: #3730a3;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #6b7280;
+    margin-bottom: 0;
+    font-size: 17px;
+}
+
+/* =========================
+   TASK INPUT
+========================= */
+
+.task-input-section {
+    background: white;
+    padding: 25px;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.task-input-section label {
+    display: block;
+    text-align: left;
+    margin-bottom: 12px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 16px;
+    resize: vertical;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #2563eb;
+}
+
+.task-input-section small {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.primary-btn {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    background: #2563eb;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #1d4ed8;
+}
+
+.secondary-btn {
+    background: #111827;
+    color: white;
+}
+
+.secondary-btn:hover {
+    background: #374151;
+}
+
+/* =========================
+   RESULT
+========================= */
+
+#result {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.ai-response {
+    margin-top: 20px;
+    padding: 25px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    line-height: 1.7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.ai-response h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+
+.ai-response strong {
+    font-weight: 700;
+}
+
+.ai-response hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* =========================
+   INTENT & HISTORY
+========================= */
+
+.intent-section,
+.history-section {
+    margin-top: 30px;
+    padding: 25px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    text-align: left;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.intent-section h2,
+.history-section h2 {
+    margin-bottom: 10px;
+}
+
+.intent-section p,
+.history-section p {
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .task-input-section,
+    .intent-section,
+    .history-section {
+        padding: 18px;
+    }
+
+    textarea {
+        height: 130px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
